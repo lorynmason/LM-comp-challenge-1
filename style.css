@@ -1,0 +1,114 @@
+*, *:after, *:before {
+  font-size: 12px;
+  font-family: 'Metamorphous', cursive;
+  box-sizing: border-box;
+}
+
+h1 {
+ color: #000000;
+ font-family: 'Metamorphous', cursive;
+ font-size: 1.7em;
+ margin: 4%;
+}
+
+h2 {
+  font-family: 'Metamorphous', cursive;
+  margin: 60px auto 0px;
+  position: absolute;
+  text-align: center;
+  font-size: .8em;
+}
+
+img {
+  max-width: 30%;
+}
+
+.icon {
+  width: 12px;
+}
+
+p {
+  font-family: 'Metamorphous', cursive;
+  margin: 0px 10px 25px 16px;
+  font-size: .9em;
+  line-height: 1.6;
+}
+
+h3 {
+  border: solid 2px #000000;
+  margin-left: 15px;
+  display: inline;
+  padding: 8px 14px;
+}
+
+.profile, 
+.experience,
+.education, 
+.blog,
+.social-menu,
+.contact,
+.portfolio {
+  height: 33.33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.potato {
+  background-color: #cff8e7;
+  grid-area: potato;
+}
+
+.profile {
+  background-color: #7fffd4;
+  grid-area: profile;
+}
+
+.picture {
+  background-image: url('images/IMG_3671.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: picture;
+}
+
+.experience {
+  grid-area: experience;
+  background-color: #66cdaa;
+}
+
+.education {
+  background-color: #689689;
+  grid-area: education;
+}
+
+.blog {
+  background-color: #cff8e7;
+  grid-area: blog;
+}
+
+.social-menu {
+  background-color: #20b2aa;
+  grid-area: social-menu;
+}
+
+.contact {
+  background-color: #66cdaa;
+  grid-area: contact;
+}
+
+.portfolio {
+  background-color: #20b2aa;
+  grid-area: portfolio;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100vh; 
+  grid-gap: 0px;
+  grid-template-areas: 
+  "potato potato profile picture picture"
+  "experience education blog picture picture"
+  "social-menu contact portfolio picture picture";
+}
