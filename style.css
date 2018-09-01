@@ -112,3 +112,84 @@ h3 {
   "experience education blog picture picture"
   "social-menu contact portfolio picture picture";
 }
+
+@media only screen and (max-width: 420px) {
+  .grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh; 
+    grid-gap: 0px;
+    grid-template-areas: 
+    "potato potato" 
+    "picture picture"
+    "experience education" 
+    "social-menu profile" 
+    "blog portfolio"
+    "contact contact"
+  }
+
+  .picture {
+    background-image: url('images/IMG_3671_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: picture;
+    height: 500px;
+  }
+
+  .potato {
+    background-color: #cff8e7;
+    grid-area: potato;
+    height: 210px;
+  }
+
+  .contact {
+    height: 200px;
+  }
+
+  .contact img{
+    max-width: 15%;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 421px) 
+and (orientation: portrait) {
+  .grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh; 
+    grid-gap: 0px;
+    grid-template-areas: 
+    "potato potato contact" 
+    "picture picture picture"
+    "experience education social-menu" 
+    "profile portfolio blog"
+  }
+
+   .picture {
+    background-image: url('images/IMG_3671_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: picture;
+    height: 1100px;
+  }
+
+  .potato {
+    background-color: #cff8e7;
+    grid-area: potato;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: 80px auto 0px;
+  }
+
+  h3, p {
+    font-size: 1.2em;
+  }
+}
