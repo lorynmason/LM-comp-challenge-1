@@ -41,6 +41,42 @@ h3 {
   padding: 8px 14px;
 }
 
+.arrows {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.arrows img {
+  max-width: 35px;
+  position: absolute;
+  top: 50%;
+}
+
+.right-arrow{
+  left: 95%;
+}
+
+.left-arrow {
+  right: 35%;
+  transform: rotate(180deg);
+  /*margin-right: -90%;*/
+}
+
+.dots-dot {
+  align-items: center;
+  display: flex;
+  margin-left: 89%;
+} 
+
+.dots {
+  max-width: 40px;
+}
+
+.dot {
+  max-width: 9px;
+}
+
 .profile, 
 .experience,
 .education, 
@@ -115,11 +151,7 @@ h3 {
 
 @media only screen and (max-width: 420px) {
   .grid-container {
-    display: grid;
-    grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
-    height: 100vh; 
-    grid-gap: 0px;
     grid-template-areas: 
     "potato potato" 
     "picture picture"
@@ -130,16 +162,10 @@ h3 {
   }
 
   .picture {
-    background-image: url('images/IMG_3671_3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: picture;
     height: 500px;
   }
 
   .potato {
-    background-color: #cff8e7;
-    grid-area: potato;
     height: 210px;
   }
 
@@ -150,16 +176,29 @@ h3 {
   .contact img{
     max-width: 15%;
   }
+
+  .dots-dot {
+    margin-left: 83%;
+  }
+
+  .arrows img {
+   top: 80%;
+  }
+
+  .right-arrow {
+    margin-left: -6%;
+  }
+
+  .left-arrow {
+    margin-right: 55%;
+  }
+  
 }
 
 @media only screen and (max-width: 1025px) and (min-width: 421px) 
 and (orientation: portrait) {
   .grid-container {
-    display: grid;
-    grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh; 
-    grid-gap: 0px;
     grid-template-areas: 
     "potato potato contact" 
     "picture picture picture"
@@ -168,16 +207,7 @@ and (orientation: portrait) {
   }
 
    .picture {
-    background-image: url('images/IMG_3671_3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: picture;
     height: 1100px;
-  }
-
-  .potato {
-    background-color: #cff8e7;
-    grid-area: potato;
   }
 
   h1 {
@@ -191,5 +221,17 @@ and (orientation: portrait) {
 
   h3, p {
     font-size: 1.2em;
+  }
+
+  .dots-dot {
+    margin-left: 92%;
+  }
+
+  .arrows img {
+   top: 80%;
+  }
+
+  .left-arrow {
+    margin-right: 60%;
   }
 }
