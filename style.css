@@ -19,12 +19,11 @@ h2 {
   font-size: .8em;
 }
 
-img {
-  max-width: 30%;
-}
-
-.icon {
-  width: 12px;
+h3 {
+  border: solid 2px #000000;
+  margin-left: 15px;
+  display: inline;
+  padding: 8px 14px;
 }
 
 p {
@@ -34,15 +33,16 @@ p {
   line-height: 1.6;
 }
 
-h3 {
-  border: solid 2px #000000;
-  margin-left: 15px;
-  display: inline;
-  padding: 8px 14px;
+img {
+  max-width: 30%;
 }
 
 section:hover, h3:hover {
   background-color: #ffffff;
+}
+
+.icon {
+  width: 12px;
 }
 
 .left-arrow:hover, .right-arrow:hover {
@@ -96,7 +96,7 @@ section:hover, h3:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
 
 .potato {
   background-color: #cff8e7;
@@ -214,10 +214,6 @@ and (orientation: portrait) {
     "profile portfolio blog"
   }
 
-   .picture {
-    height: 1100px;
-  }
-
   h1 {
     font-size: 2em;
   }
@@ -229,6 +225,10 @@ and (orientation: portrait) {
 
   h3, p {
     font-size: 1.2em;
+  }
+
+   .picture {
+    height: 1100px;
   }
 
   .dots-dot {
