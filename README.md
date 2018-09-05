@@ -25,9 +25,9 @@ You may NOT take liberties with the layout, but your creative license includes:
 <li>Include a README with the repo that provides a brief overview of the project, and images of both the original comp and your version.</li>
 <li>Push your final work to github pages</li>
 
-COMP:
+<h2>COMP:</h2>
 
 <img width="828" alt="screen shot 2018-09-05 at 8 37 31 am" src="https://user-images.githubusercontent.com/40005248/45100795-57192600-b0e7-11e8-89ca-eef5e43c54c2.png">
 
-My version:
+<h2>My version:</h2>
 <img width="1163" alt="screen shot 2018-09-05 at 8 38 13 am" src="https://user-images.githubusercontent.com/40005248/45100819-67c99c00-b0e7-11e8-87b3-0a65ce1189f2.png">
