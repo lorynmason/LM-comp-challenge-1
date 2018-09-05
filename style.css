@@ -109,7 +109,7 @@ section:hover, h3:hover {
 }
 
 .picture {
-  background-image: url('images/IMG_3671.jpg');
+  background-image: url('https://raw.githubusercontent.com/lorynmason/lm-comp-challenge-1/master/Images/IMG_3671.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: picture;
